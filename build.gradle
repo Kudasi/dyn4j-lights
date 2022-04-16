@@ -1,0 +1,20 @@
+version = "1.0"
+
+plugins {
+	id 'java-library'
+}
+
+sourceSets {
+	srcDirs = ["src"]
+}
+
+repositories {
+	mavenCentral()
+}
+
+gdxVersion = "1.9.10"
+
+dependencies {
+	implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
+	implementation "org.dyn4j:dyn4j:4.2.0"
+}
